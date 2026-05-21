@@ -1,0 +1,88 @@
+/* Place your CSS styles in this file */
+
+.nothing-you-could-do-regular {
+  font-family: "Nothing You Could Do", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  /*Dark Mode Theme*/
+  --dark-bg-primary: #252525;
+  --dark-bg-secondary: #545454;
+  --dark-bg-accent1: #7d7d7d;
+  --dark-bg-accent2: #cfcfcf;
+  --fs-2: clamp(1.62rem, 1.3287rem + 1.2948vw, 2.3322rem);
+  --fs-5: clamp(2.7994rem, 1.6848rem + 4.9538vw, 5.524rem);
+  --space-2xl: clamp(4.5rem, 4.1932rem + 1.3636vw, 5.25rem);
+  --space-2xl-4xl: clamp(4.5rem, 2.0455rem + 10.9091vw, 10.5rem);
+
+}
+
+::view-transition-old(root) {
+  animation-delay: 500ms;
+}
+
+::view-transition-new(root) {
+  animation: move-in 500ms;
+  animation-timing-function: linear(0, 0.417 25.5%, 0.867 49.4%, 1 57.7%, 0.925 65.1%, 0.908 68.6%, 0.902 72.2%, 0.916 78.2%, 0.988 92.1%, 1);
+}
+@keyframes move-in {
+  from { translate: 0 -100%;}
+  to {translate: 0 0;}
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+.hero {
+  position:relative;
+  container-type: inline-size;
+  padding-block: var(--space-2xl-4xl);
+  }
+
+.hero-text {
+  margin: 0; /* Remove default margin */
+  z-index: 1; /* Make sure text is above the image */
+  
+}
+
+.hero-description {
+  font-size: var(--fs-2);
+}
+
+.hero-title {
+  font-size: var(--fs-5);
+  font-weight: 900;
+  anchor-name:--hero-title;
+  -webkit-text-stroke:25px var(--bs-body-bg);
+  paint-order:stroke fill;
+}
+
+@supports not (anchor-name: --hero-title) {
+  .hero-image {
+  float:left}
+
+}
+
+@supports (anchor-name: --hero-title) {
+  @media(width>786px) {
+    .hero-image {
+      position:absolute;
+      z-index:-2;
+    inset:auto anchor(--hero-title right) anchor(--hero-title bottom) auto}
+
+  }
+
+}
+
+h1,h2,h3,h4,p {
+  text-wrap:balance;
+}
+
+.auto-grid {
+  display:grid;
+  gap:var(--auto-grid-gap, var(--space-m));
+grid-template-columns:repeat(var(--auto-grid-repeat, auto-fit),minmax(var( --auto-grid-min-width, min(var(--auto-grid-min-col-size, 320px), 100%) ),1fr))}

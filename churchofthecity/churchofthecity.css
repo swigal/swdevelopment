@@ -1,0 +1,114 @@
+:root {
+  --color-0: #fff;
+  --color-1: #a94b50;
+  --color-2: #7faa4b;
+  --color-3: #4baaa5;
+  --color-4: #764baa;
+  --color-5: #cd8e91;
+  --bg-gradient-1: 
+    linear-gradient(135deg, #312c00 0.000%, #312c00 14.286%, #332e1e calc(14.286% + 1px), #332e1e 28.571%, #323149 calc(28.571% + 1px), #323149 42.857%, #2c3377 calc(42.857% + 1px), #2c3377 57.143%, #2436a2 calc(57.143% + 1px), #2436a2 71.429%, #1a39c0 calc(71.429% + 1px), #1a39c0 85.714%, #113ccc calc(85.714% + 1px) 100.000%);
+  --bg-gradient-2: linear-gradient(90deg, #a47451 0.000%, #9c9881 16.667%, #73a09d 33.333%, #3b899a 50.000%, #095b79 66.667%, #002847 83.333%, #000116 100.000%);
+  --bg-gradient-2-a50: 
+    linear-gradient(90deg, #a4745180 0.000%, #9c988180 16.667%, #73a09d80 33.333%, #3b899a80 50.000%, #095b7980 66.667%, #00284780 83.333%, #00011680 100.000%);
+  --bg-gradient-3: 
+    linear-gradient(135deg, #534e20 0.000%, #534e20 7.692%, #554f2e calc(7.692% + 1px), #554f2e 15.385%, #555040 calc(15.385% + 1px), #555040 23.077%, #555154 calc(23.077% + 1px), #555154 30.769%, #54536b calc(30.769% + 1px), #54536b 38.462%, #515482 calc(38.462% + 1px), #515482 46.154%, #4e5599 calc(46.154% + 1px), #4e5599 53.846%, #4a57af calc(53.846% + 1px), #4a57af 61.538%, #4558c3 calc(61.538% + 1px), #4558c3 69.231%, #4159d4 calc(69.231% + 1px), #4159d4 76.923%, #3c5be2 calc(76.923% + 1px), #3c5be2 84.615%, #375dea calc(84.615% + 1px), #375dea 92.308%, #335eee calc(92.308% + 1px) 100.000%);
+  --bg-gradient-4: 
+      linear-gradient(315deg, #041647 0.000%, #041647 16.667%, #0227a5 calc(16.667% + 1px), #0227a5 33.333%, #0539e6 calc(33.333% + 1px), #0539e6 50.000%, #074bff calc(50.000% + 1px), #074bff 66.667%, #055fff calc(66.667% + 1px), #055fff 83.333%, #0372f4 calc(83.333% + 1px) 100.000%);
+    --bg-gradient-5: 
+      linear-gradient(225deg, #000040 0.000%, #001154 25.000%, #002671 50.000%, #003f96 75.000%, #005dc3 100.000%);
+    --bg-gradient-6: 
+      /* https://grabient.com/AwGgdATAbA7OXFKMUAsBmEBGSAOK4wAnHGMUYUbiMrJmDFqkA?style=linearSwatches&angle=135 */
+      linear-gradient(135deg, #00004f 0.000%, #00004f 20.000%, #000f81 calc(20.000% + 1px), #000f81 40.000%, #0028b4 calc(40.000% + 1px), #0028b4 60.000%, #0041e6 calc(60.000% + 1px), #0041e6 80.000%, #005bff calc(80.000% + 1px) 100.000%);
+    --bg-gradient-6-15deg: 
+      /* https://grabient.com/AwGgdATAbA7OXFKMUAsBmEBGSAOK4wAnHGMUYUbiMrJmDFqkA?style=linearSwatches&angle=15&steps=5 */
+      linear-gradient(190deg, #00004f 0.000%, #00004f 20.000%, #000f81 calc(20.000% + 1px), #000f81 40.000%, #0028b4 calc(40.000% + 1px), #0028b4 60.000%, #0041e6 calc(60.000% + 1px), #0041e6 80.000%, #005bff calc(80.000% + 1px) 100.000%);
+    --blue-1: #00004f;
+    --blue-2: #000f81;
+    --blue-3: #0028b4;
+    --blue-4: #0041e6;
+    --blue-5: #005bff;
+    
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.sw-banner {
+    background-color: var(--color-1);
+    color: white;
+    padding: 5px 10px;
+}
+.sw-banner p {
+    color: hsl(from var(--color-0) h s l / .67);
+}
+.navbar-sw {
+    background-color: var(--color-4);
+    color: white;
+}
+.navbar-sw-link {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar-sw-link:hover {
+    background-color: hsl(from var(--color-4) h s 90);
+}
+.navbar-sw-horizontal {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer h1 {
+  font-size: 2rem;
+}
+
+.hero-section {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  background-image: var(--bg-gradient-2-a50), url(./assets/church-1000x667.jpg);
+}
+
+.hero-text, .hero-subtext {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

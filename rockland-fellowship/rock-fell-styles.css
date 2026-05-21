@@ -1,0 +1,248 @@
+ @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+ 
+ /*Global Methodist Church Brand Colors*/
+ :root {
+    --gmc-blue: rgb(0, 109, 182);
+    --gmc-gold: rgb(224, 165,38);
+    --gmc-red: rgb(249,56,34);
+    --gmc-green: rgb(0,118,114);
+    --gmc-purple: rgb(165,24,144);
+    --gmc-beige: rgb(220,212,204);
+    --churchdev-blue: hsl(218, 37%, 23%);
+ }
+
+// <weight>: Use a value from 400 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.eb-garamond-regular {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.eb-garamond-medium {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;    
+}
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.brand-text {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  margin-bottom: 0;      /* Remove the forced downward shift */
+  line-height: 1;        /* Keeps the tagline tight */
+}
+.brand-text::after {
+  content: "A Global Methodist Church";
+  text-transform: uppercase;
+  text-align: center;
+  display: block;        /* Forces tagline to its own line */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.5em;      /* Makes tagline smaller than header */
+  font-weight: normal;
+  margin-top: .2rem;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;   /* Vertically centers logo + text */
+  gap: 0.5rem;           /* Optional: space between logo and text */
+}
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* Default hamburger icon */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,\
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'>\
+  <path stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/>\
+  </svg>");
+}
+
+/* When menu is open (toggler is active) */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,\
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'>\
+  <path stroke='white' stroke-width='2' stroke-linecap='round' d='M6 6l18 18M24 6L6 24'/>\
+  </svg>");
+}
+
+.bgimg-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./rockfell-assets/Rockland_Fellowship_Social_Media-2.jpeg);
+}
+.bgimg-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./rockfell-assets/Rockland_Fellowship_Social_Media-3.jpeg);
+}
+.bgimg-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./rockfell-assets/Rockland_Fellowship_Social_Media-4.jpeg);
+}
+.bgimg-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./rockfell-assets/Rockland_Fellowship_Social_Media-5.jpeg);
+}
+.hero-section {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 5vh;
+  position: relative;
+  /* overflow: hidden; // Temporarily removed or keep if desired */
+  z-index: 1;
+  display: flex;              /* Enable flexbox */
+  flex-direction: column;     /* Stack children vertically */
+  justify-content: center;    /* Center vertically */
+  align-items: center;        /* Center horizontally */
+}
+
+
+
+h1 {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;   
+  text-shadow: 4px 4px 0px rgba(0,0,0,1);
+}
+h2, h3, h4, h5, h6 {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; 
+}
+.hero-text {
+  color: #fff;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.35);
+
+  }
+.hero-subtext {
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  margin-top: 1rem;
+}
+.hero-text, .hero-subtext {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* <div class="shape"> OR <img class="shape"> */
+.divider-shape {
+	position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--churchdev-blue);
+  /* Inverted clip-path coordinates */
+  clip-path: shape(from 0% 100%, line to 100% 100%, line to 100% 0%, curve to 50% 82.24% with 83.33% 54.82% / 66.67% 82.24%, curve to 0% 0% with 33.33% 82.24% / 16.67% 54.82%, line to 0% 100%, close);
+  z-index: 10;
+}
+.divider-section {
+  background-color: var(--churchdev-blue);
+  color: var(--bs-light);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.divider-section div {
+  text-align: center;
+}
+
+.rf-card-row {
+  display: flex;              /* Enable flexbox */
+  flex-direction: column;     /* Stack children vertically */
+  justify-content: center;    /* Center vertically */
+  align-items: center;
+}
+.contact-icon {
+  background-color: var(--bs-light); 
+  color: var(--churchdev-blue); 
+  padding: 6px 9px;
+}
+.social-icon {
+  background-color: var(--bs-light); 
+  color: var(--churchdev-blue);
+  font-size: 24px;  
+  padding: 4px 8px; 
+}
+a:has(> i.social-icon), a:has(> i.contact-icon) {
+  text-decoration: none;
+  color: inherit;
+}
+.wrap-text {
+  width: 100%; /* Required: the container must have a defined width */
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* Legacy support */
+}
+
+/*SW Card Flip - Rotate a two-face card 180 degrees on the Y axis */
+.sw-card-flip {
+  perspective: 1000px;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+.sw-card-flip-inner {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  height: 100%;
+}
+.sw-card-flip:hover .sw-card-flip-inner {
+  transform: rotateY(180deg);
+}
+.sw-card-flip-front, .sw-card-flip-back {
+  position:absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.sw-card-flip-back {
+  transform: rotatey(180deg);
+}

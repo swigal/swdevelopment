@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-US" data-bs-theme="dark">
+  <head>
+    <title>
+      Home Page by SW
+    </title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="template, SW, Samuel Wigal, web-developer">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="author" content="Samuel Wigal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samuel Wigal">
+    <!-- Load google fonts styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <!-- Bootstrap - Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Local Style Sheets -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./churchofthecity/churchofthecity.css">
+  </head>
+  <style>
+    footer h1 {
+        font-size: 1.5rem;
+      }
+      .social-icon {
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.5rem;
+      }
+  </style>
+</head>
+<body>
+  <header class="text-bg-dark sticky-top d-flex flex-row flex-wrap justify-content-between px-2" >
+    <a href="./index.html" style="text-decoration: none; color:var(--bs-light)" class="order-lg-0">
+      <i class="bi bi-box-arrow-left">
+      </i>
+      return to
+      <span class="nothing-you-could-do-regular">
+        SW
+      </span>
+    </a>
+    <span class=" text-light text-opacity-50 order-lg-2">
+      Built and Coded by
+      <span class="nothing-you-could-do-regular">
+        SW
+      </span>
+    </span>
+  </header>
+  <nav role="navigation" class="border-bottom border-primary-subtle navbar navbar-expand" style="background: var(--bg-gradient-6)">
+    <div class="container-fluid justify-content-center ">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item ">
+          <a href="./churchofthecity.html" class="nav-link active" aria-current="page">
+            Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./churchofthecity/about.html" class="nav-link">
+            About
+          </a>
+        </li>
+        <li class="nav-item px-3">
+          <a href="./churchofthecity.html" style="color:white;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-buildings" viewBox="0 0 16 16">
+              <path d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z"/>
+              <path d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./churchofthecity/services.html" class="nav-link">
+            Services
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./churchofthecity/locations.html" class="nav-link">
+            Locations
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main role="main">
+    <section class="hero-section d-flex flex-column justify-content-center">
+      <div class="container-lg">
+        <div class="hero-text">
+          <h1>
+            <small class="text-uppercase lead" style="letter-spacing: 7px">
+              welcome to
+            </small>
+            <br>
+            <span class="display-1">
+              Church of the City
+            </span>
+          </h1>
+          <p class="lead py-3">
+            Opening God's Word, bringing the Light and Life to everyone.
+          </p>
+          <div class="d-flex flex-row gap-3">
+            <a href="./churchofthecity/about.html" class="btn btn-outline-light btn-lg">
+              Who We Are
+            </a>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#visitModal">
+              Join Us
+            </button>
+          </div>
+        </div>
+      </div>
+      <dialog class="modal fade" tabindex="-1" id="visitModal" aria-labelledby="visitModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 id="visitModalTitle">
+                Schedule Your visit!
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="">
+                <h2>
+                  Let us know you're visiting, We'll show you around!
+                </h2>
+                <p class="text-secondary">
+                  We'll also have a special gift, just for you!
+                </p>
+                <form class="needs-validation pt-3" action="https://formspree.io/f/mgoqopnk" method="post">
+                  <div class="row">
+                    <div class="mb-3 col-sm-6">
+                      <label for="fullName" class="form-label">
+                        Full Name
+                      </label>
+                      <input type="text" class="form-control" id="fullName" placeholder="please enter your name" aria-label="Full Name" name="fullName" required>
+                    </div>
+                    <div class="mb-3 col-sm-6">
+                      <label for="phoneNumber" class="form-label">
+                        Phone Number
+                      </label>
+                      <input type="tel" class="form-control" id="phoneNumber" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" aria-label="Phone Number" name="phoneNumber">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-8 mb-3">
+                      <label for="email" class="form-label">
+                        Email Address
+                      </label>
+                      <input type="email" class="form-control" id="email" placeholder="hello@churchofthecity.church" aria-label="Email" name="email" required>
+                    </div>
+                    <div class="col-sm-4 mb-3">
+                      <label for="guestNo" class="form-label">
+                        No. of Guests
+                      </label>
+                      <input type="number" class="form-control" id="guestNo" aria-label="Number of Guests" name="guestNo" min="1" max="20" placeholder="4" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="visitDate" class="form-label">Visit Date and Time</label>
+                    <input type="datetime-local" id="visitDate" list="available-times" class="form-control">
+
+                    <datalist id="available-times">
+                      <option value="2026-05-17T09:00"></option>
+                      <option value="2026-05-17T11:30"></option>
+                      <option value="2026-05-17T09:00"></option>
+                      <option value="2026-05-17T11:30"></option>
+                      <option value="2026-05-17T09:00"></option>
+                      <option value="2026-05-17T11:30"></option>
+                    </datalist>
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-2">What age are your children? <small class="text-body-secondary">check all that apply</small></p>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Nursery" id="nurseryCheck" name="Nurser">
+                      <label class="form-check-label" for="nurseryCheck">
+                        Nursery (0–2 years)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Pre-K" id="preKCheck" name="Pre-K">
+                      <label class="form-check-label" for="preKCheck">
+                        Preschool/Early Childhood (3–5 years)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Early Elementary" id="earlyElemCheck" name="Early Elementary">
+                      <label class="form-check-label" for="earlyElemCheck">
+                        Early Elementary (K–2nd grade)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Older Elementary" id="olderElemCheck" name="Older Elementary">
+                      <label class="form-check-label" for="olderElemCheck">
+                        Older Elementary (3rd–5th grade)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="Middle School" id="middleCheck" name="Middle School">
+                      <label class="form-check-label" for="middleCheck">
+                        Middle School (6th-8th grade)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="High School" id="highCheck" name="High School">
+                      <label class="form-check-label" for="highCheck">
+                        High School (9th-12th grade)
+                      </label>
+                    </div>
+                  </div>
+                  <div class="text-end">
+                    <button class="btn btn-outline-primary mb-3" type="submit">
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </dialog>
+    </section>
+    <section style="background-color: var(--blue-1)">
+      <div class="container-lg py-5">
+        <h1>
+          Worship with us this Sunday!
+        </h1>
+        <div class="row row-cols-1 row-cols-md-3 gx-3 gy-5 mt-3">
+          <div class="col">
+            <h2>
+              Traditional Worship
+            </h2>
+            <p class="lead">
+              9:00&nbsp;AM
+            </p>
+            <p>
+              Hymns, liturgy, and all the traditions you know and love.  You'll feel right at home in our traditional worship service.
+            </p>
+          </div>
+          <div class="col">
+            <h2>
+              Sunday School
+            </h2>
+            <p class="lead">
+              10:15&nbsp;AM
+            </p>
+            <p>
+              We have classes for all ages.  Let's open God's Word together and disciver the joy to be found in knowing God.
+            </p>
+          </div>
+          <div class="col">
+            <h2>
+              Contemporary Worship
+            </h2>
+            <p class="lead">
+              11:30&nbsp;AM
+            </p>
+            <p>
+              Praise and worship, raised hands, singing loud for all to hear... come praise God with us in our take on contemporary worship.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo" style="background: var(--bg-gradient-6-15deg); color: white;">
+    <div class="container-lg">
+      <div class="row gy-3 py-5 px-3">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h1 class="pb-2">
+            Get in touch!
+          </h1>
+          <a style="width: 220px" class="icon-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="tel:3044835890">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            </svg>
+            (304)&nbsp;483-5890
+          </a>
+          <a style="width: 260px" class="icon-link link-body-emphasis link-offset-2 link-underline-opacity-25 link-underline-opacity-75-hover" href="mailto:hello@samuelwigal.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+            </svg>
+            hello@samuelwigal.com
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <h1 class="pb-2">
+            Like, Follow & Subscribe!
+          </h1>
+          <div class="d-flex flex-row gap-2 align-items-center">
+            <a href="https://facebook.com" class="social-icon">
+              <i class="bi bi-facebook" aria-label="Like us on Facebook">
+              </i>
+            </a>
+            <a href="https://instagram.com" class="social-icon">
+              <i class="bi bi-instagram" aria-label="Follow us on Instagram">
+              </i>
+            </a>
+            <a href="https://youtube.com" class="social-icon">
+              <i class="bi bi-youtube" aria-label="Subscribe to our youtube channel">
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <h1 id="ourlocation" class="pb-2">
+            Our Location
+          </h1>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24705.880022131034!2d-81.62092958760181!3d39.282920735210425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88484be5a5afcc57%3A0xdaaa2fd8f82d7639!2sBelpre%2C%20OH%2045714!5e0!3m2!1sen!2sus!4v1779214742807!5m2!1sen!2sus" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-labelledby="#ourlocation">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </footer>
+      <!-- ... your HTML ... -->
+    <script>
+function updateAvailableTimes() {
+    const datalist = document.getElementById('available-times');
+    const times = ['09:00', '11:30']; // Updated times
+    const numberOfSundays = 3;        // Updated count
+    let optionsHTML = '';
+
+    let d = new Date();
+    d.setDate(d.getDate() + (7 - d.getDay()) % 7);
+
+    for (let i = 0; i < numberOfSundays; i++) {
+        const dateStr = d.toISOString().split('T')[0];
+        times.forEach(time => {
+            optionsHTML += `<option value="${dateStr}T${time}"></option>`;
+        });
+        d.setDate(d.getDate() + 7);
+    }
+    datalist.innerHTML = optionsHTML;
+}
+        updateAvailableTimes();
+    </script>
+</body>
+</body>
+</html>
