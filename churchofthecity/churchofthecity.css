@@ -8,6 +8,7 @@
   --bg-gradient-1: 
     linear-gradient(135deg, #312c00 0.000%, #312c00 14.286%, #332e1e calc(14.286% + 1px), #332e1e 28.571%, #323149 calc(28.571% + 1px), #323149 42.857%, #2c3377 calc(42.857% + 1px), #2c3377 57.143%, #2436a2 calc(57.143% + 1px), #2436a2 71.429%, #1a39c0 calc(71.429% + 1px), #1a39c0 85.714%, #113ccc calc(85.714% + 1px) 100.000%);
   --bg-gradient-2: linear-gradient(90deg, #a47451 0.000%, #9c9881 16.667%, #73a09d 33.333%, #3b899a 50.000%, #095b79 66.667%, #002847 83.333%, #000116 100.000%);
+  --bg-gradient-2-90:linear-gradient(to bottom, #a47451 0.000%, #9c9881 16.667%, #73a09d 33.333%, #3b899a 50.000%, #095b79 66.667%, #002847 83.333%, #000116 100.000%);
   --bg-gradient-2-a50: 
     linear-gradient(90deg, #a4745180 0.000%, #9c988180 16.667%, #73a09d80 33.333%, #3b899a80 50.000%, #095b7980 66.667%, #00284780 83.333%, #00011680 100.000%);
   --bg-gradient-3: 
@@ -22,6 +23,7 @@
     --bg-gradient-6-15deg: 
       /* https://grabient.com/AwGgdATAbA7OXFKMUAsBmEBGSAOK4wAnHGMUYUbiMrJmDFqkA?style=linearSwatches&angle=15&steps=5 */
       linear-gradient(190deg, #00004f 0.000%, #00004f 20.000%, #000f81 calc(20.000% + 1px), #000f81 40.000%, #0028b4 calc(40.000% + 1px), #0028b4 60.000%, #0041e6 calc(60.000% + 1px), #0041e6 80.000%, #005bff calc(80.000% + 1px) 100.000%);
+    --glass-glare: linear-gradient(158deg, #00008510 9%, #0028b410 17%, #ffffff10 21%, #0028b410 25%, #00008510 49%, #0028b410 76%, #ffffff10 82%, #0028b410 86%, #00008510 100%);
     --blue-1: #00004f;
     --blue-2: #000f81;
     --blue-3: #0028b4;
@@ -98,6 +100,7 @@ footer h1 {
   background-size: cover;
   background-position: bottom center;
   background-image: var(--bg-gradient-2-a50), url(./assets/church-1000x667.jpg);
+  background-blend-mode:darken;
 }
 
 .hero-text, .hero-subtext {
@@ -111,4 +114,123 @@ footer h1 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.marquee-text {
+  overflow: clip;
+}
+
+.marquee-track {
+  display: flex;
+  padding-left: 4.8rem;
+  gap: 4.8rem;
+  width: max-content;
+  animation: marquee-scroll-text var(--speed, 25s) linear infinite var(--direction, forwards);
+}
+
+.marquee-text p {
+  font-size: 3rem;
+}
+
+@keyframes marquee-scroll-text {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-wrapper {
+  margin: 0 auto;
+  
+}
+
+.fadeout-horizontal {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 5rem,
+    black calc(100% - 5rem),
+    transparent
+  );
+}
+
+/* Optional: Pause on hover */
+.marquee-wrapper:hover .marquee-text {
+  animation-play-state: paused;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+.glass-card-2 {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  animation: flip-up linear forwards;
+  animation-timeline: view();
+  animation-range: 50% 90%;
+}
+
+@keyframes flip-up {
+  from {
+    transform: perspective(800px) rotateX(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: perspective(800px) rotateX(90deg);
+    opacity: 0;
+  }
+}
+
+.bgimg-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../rockland-fellowship/rockfell-assets/Rockland_Fellowship_Social_Media-3.jpeg);
+  background-position: center center;
+  }
+  @keyframes slideLeftAnimation {
+  0% { transform: translateX(-100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-left {
+  animation-name: slideLeftAnimation;
+  animation-timeline: view(block 40% 0%);
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+@keyframes slideRightAnimation {
+  0% { transform: translateX(100px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-right {
+  animation-name: slideRightAnimation;
+  animation-timeline: view(block 40% 0%);
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes slideUpAnimation {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.slide-up-bottom {
+  animation-name: slideUpAnimation;
+  animation-timeline: view(block 40% 0%);
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
 }
