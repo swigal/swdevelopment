@@ -1,0 +1,170 @@
+<!doctype html>
+<html  data-bs-theme="light">
+  <head>
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme");
+        if (theme) {
+          document.documentElement.setAttribute("data-bs-theme", theme);
+        } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          document.documentElement.setAttribute("data-bs-theme", "dark");
+          document.addEventListener("DOMContentLoaded", () => {
+            // Your code runs here after HTML is parsed
+            themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
+            });
+
+        } else {
+          document.documentElement.setAttribute("data-bs-theme", "light");themeIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
+        }
+      })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      SW - About Samuel
+    </title>
+    <meta name="description" content="">
+    <meta name="keywords" content="website development, social media management, church communication, audio video integration">
+    <meta name="author" content="Samuel Wigal">
+    <meta name="google-site-verification" content="Y3Dweh0RFVAkVOnY27mo4PV6NdJ_C9fKmQWcmvPXLGE" />
+    <!-- Load google fonts styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <!-- Bootstrap - Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Local Style Sheets -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/bf8d243e3f.js" crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container-lg">
+        <a class="navbar-brand nothing-you-could-do-regular" href="/index.html" style="font-size:40px;">
+          SW
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="/index.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/about.html" aria-current="page">
+                About Sam
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./churchofthecity.html">
+                    Church of the City <span class="text-secondary">Template</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./rockland-fellowship.html">
+                    Rockland Fellowship GMC
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://gerkiespizza.samuelwigal.com">
+                    Gerkies Pizza Pop-Up
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    Social Media
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                Portfolio
+              </a>
+            </li>
+          </ul>
+          <button id="themeSwitcher" class="btn btn-outline-primary rounded-circle">
+            <i id="themeIcon" class="bi bi-moon-stars-fill">
+            </i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section id="history">
+        
+    </section>
+
+ <!--My Resume-->
+<div id="myresume" class="container my-5 card-shadow p-1">
+    <div class="p-4"><h4 class="display-5 text-center">SAMUEL WIGAL</h4>
+    <h6 class="border-top border-bottom border-2 text-center py-3">CHURCH ADMINISTRATION / TREASURER</h6>
+    <div class="row">
+        <div class="col-md-4">
+            <h6 class="border-bottom border-dark pb-2 mt-5">CONTACT</h6>
+            <p>304-483-5890<br>
+            Samuelwigal95@gmail.com</p>
+
+            <h6 class="border-bottom border-dark pb-2 mt-5">SKILLS</h6>
+            <p>Bookkeeping<br>
+            Accounting<br>
+            Analytics<br>
+            Communication<br>
+            Creativity<br>
+            Graphic Design<br>
+            Front-End Web Design</p>
+            
+            <h6 class="border-bottom border-dark pb-2 mt-5">TOOLS</h6>
+            <p>Fender Studio Pro 7<br>
+            Adobe Creative Suite<br>
+            (Photoshop, Illustrator, InDesign, Premier Pro, Audition, Dreamweaver)<br>
+            Microsoft 365<br>
+            ProPresenter<br>
+            Church Windows (ChMS)<br></p>
+        </div>
+        <div class="col-md-8">
+            <h6 class="border-bottom border-dark pb-2 mt-5">PROFILE</h6>
+            <p>With extensive experience in church administration and financial oversight, I am a dedicated professional. My career spans a variety of roles that have honed my expertise in bookkeeping, accounting, and strategic planning. I am known for my analytical acumen, strong communication skills, and creative approach to problem-solving.</p>
+
+            <h6 class="border-bottom border-dark pb-2 mt-5"> EXPERIENCE</h6>
+            <p>Church Administrative Assistant<br>
+            <b>2024 - Present – Revelation Fellowship GMC, Parkersburg, WV</b><br>
+            Helped to plant Revelation Fellowship church in Parkersburg, WV. Registered the church with all federal, state and local governments. Established financial processes and policies for the church. Managed the setup of the church’s online and community presence through social media, websites, and other mobile platforms.</p>
+
+            <p>Church Administrative Assistant and Treasurer<br>
+            <b>2019–2024 – Stout Memorial UMC, Parkersburg, WV</b>,<br>
+            Effectively managed church finances, ensuring accurate bookkeeping, accounting, and financial reporting. Concurrently, I successfully executed marketing projects, developing and leading social media campaigns that enhanced the church's online presence. Successfully communicated the church’s financial needs and completed a $75,000 capital campaign. My strong organizational skills and meticulous attention to detail allowed me to juggle multiple projects, maintain financial integrity, and deliver impactful marketing results. Worked with church staff and members to overhaul the church’s website and social media presence. Establish a brand for the church, creating a consistent presence through all forms of digital and print communications. Launched an app for the church, placing newsletters, learning resources, sermons, and worship services directly in the hands of the congregation. Successfully implemented livestreaming and audio-visual systems throughout the church, connecting our congregation and extending our impact to parishioners outside the local congregation.</p>
+        </div>        
+    </div></div>
+</div> <!-- End My Resume -->
+
+<!--Import Footer Code-->
+    <div w3-include-html="sw-footer.html">
+    </div>
+    <!-- Load external JavaScript -->
+    <script src="scripts.js">
+    </script>
+    <script src="https://www.w3schools.com/lib/w3.js">
+    </script>
+    <script>
+      w3.includeHTML();
+    </script>
+  </body>
+</html>
